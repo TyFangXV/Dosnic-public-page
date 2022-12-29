@@ -1,38 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.cdnfonts.com/css/dune-rise" rel="stylesheet">
+  <title>MovieStream | The Future of Movie Streaming</title>
+  <link href="https://fonts.cdnfonts.com/css/Dune Rise-rise" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="styleSheet" href="./style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body class="bg-[#262626]">
-    <div class="min-w-full h-14 bg-[#350068] flex flex-row items-center justify-between">
-        <h1 class="text-[#C50FE7] font-['Dune_Rise'] ml-3">Dosnic</h1>
-        <span class="flex flex-row items-center">
-            <a href="#" class="pr-5 pl-5 text-white font-['PT_Sans'] font-bold text-lg transition duration-300 group focus:text-[#C50FE7]">
-                Notice
-                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#C50FE7]"></span>
-            </a>
-            <a href="#" class="pr-5 pl-5 text-white font-['PT_Sans'] font-bold text-lg transition duration-300 group focus:text-[#C50FE7]">
-                Devlog
-                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#C50FE7]"></span>
-            </a>
-            <a href="#" class="pr-5 pl-5 text-white font-['PT_Sans'] font-bold text-lg transition duration-300 group focus:text-[#C50FE7]">
-                Download
-                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#C50FE7]"></span>
-            </a>
-        </span>
-    </div>
-
-    <div id="showcase" class="flex items-center justify-center h-screen">
-        <h1 id="explore" class="font-['PT_Sans'] text-6xl text-[#C50FE7] font-bold slider-content">Explore.</h1>
-        <h1 id="watch" class="font-['PT_Sans'] text-6xl text-[#350068] font-bold slider-content">Watch.</h1>
-        <h1 id="enjoy" class="font-['PT_Sans'] text-6xl text-[#fff9] font-bold slider-content">Enjoy</h1>
-    </div>
-    <script src="./script.js"/>
+<body>
+  <header>
+    <h1>MovieStream</h1>
+    <p>The Future of Movie Streaming</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#screenshots">Screenshots</a></li>
+      <li><a href="#download">Download</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>No country restriction</li>
+        <li>All movies and shows</li>
+        <li>Privacy</li>
+        <li>Screen-sharing</li>
+      </ul>
+    </section>
+    <h2>Screenshots</h2>
+    <section id="screenshots">
+        <div class="phone">
+          <img src="./asset/home.png" alt="Screenshot of the MovieStream app home screen">
+        </div>
+        <div class="phone">
+          <img src="./asset/explore.png" alt="Screenshot of the MovieStream app movie detail page">
+        </div>
+        <div class="phone">
+          <img src="./asset/search.png" alt="Screenshot of the MovieStream app user profile page">
+        </div>
+      </section>
+    <section id="download">
+      <h2>Download the App</h2>
+      <p>App will be available to the public sooner or later</p>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright 2022 MovieStream</p>
+  </footer>
 </body>
 </html>

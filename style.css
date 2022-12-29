@@ -1,13 +1,200 @@
-.slider-content{
-    animation: slideUp 500ms ease-in-out;
+body {
+  background-color: #262626;
+  color: #C50FE7;
+  font-family: "PT SansI", "PTSansBT", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes slideUp {
-    from {
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(0%);
-    }
+header {
+  background-color: #350068;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Dune Rise", sans-serif;
+  margin: 0;
+}
+
+header p {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: #262626;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  font-family: "PTBI", "PTSansBT", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #777;
+}
+
+main {
+  margin: 20px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+section h2 {
+  font-family: "Dune Rise", sans-serif;
+  margin-bottom: 10px;
+}
+
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section li {
+  background-color: #350068;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1vw;
+  height: 100px;
+  margin-bottom: 20px;
+  width: 15%;
+}
+
+section li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+#screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.phone {
+  background: #333;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+  width: 15%;
+}
+
+.phone:before {
+  border: 10px solid transparent;
+  border-top-color: #333;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 0;
+}
+
+#screenshots img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+
+#download div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#download img {
+  height: 50px;
+  margin: 0 10px;
+}
+
+footer {
+  background-color: #350068;
+  color: #fff;
+  font-family: "PT Sans", "PTSansB", sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  #screenshots {
+    flex-direction: column;
   }
-  
+
+  .phone {
+    width: 100%;
+  }
+
+  header {
+    margin: 40px 0;
+  }
+
+  header h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  section li {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+@media only screen and  (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media only screen and  (max-width: 480px) {
+  section ul {
+    flex-direction: column;
+  }
+
+  section li {
+    width: 100%;
+  }
+}
