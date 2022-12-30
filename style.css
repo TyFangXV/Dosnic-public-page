@@ -44,7 +44,7 @@ nav li {
 
 nav a {
   color: #fff;
-  font-family: "PTBI", "PTSansBT", sans-serif;
+  font-family: "PT Sans", "PTSansBT", sans-serif;
   font-size: 18px;
   text-decoration: none;
 }
@@ -96,6 +96,9 @@ section li:before {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.heading {
+  font-family: "Dune Rise";
+}
 
 .phone {
   background: #333;
@@ -137,17 +140,24 @@ section li:before {
 }
 
 footer {
-  background-color: #350068;
   color: #fff;
   font-family: "PT Sans", "PTSansB", sans-serif;
-  padding: 20px;
   text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.branding{
+  font-family: "Dune Rise";
 }
 
 @media only screen and (max-width: 480px) {
   #screenshots {
     flex-direction: column;
   }
+
 
   .phone {
     width: 100%;
