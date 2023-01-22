@@ -1,210 +1,151 @@
-body {
-  background-color: #262626;
-  color: #C50FE7;
-  font-family: "PT SansI", "PTSansBT", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #350068;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-family: "Dune Rise", sans-serif;
-  margin: 0;
-}
-
-header p {
-  font-family: "PT Sans", sans-serif;
-  margin: 0;
-}
-
-nav {
-  background-color: #262626;
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav li {
-  margin: 0 10px;
-}
-
-nav a {
-  color: #fff;
-  font-family: "PT Sans", "PTSansBT", sans-serif;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #777;
-}
-
-main {
-  margin: 20px;
-}
-
-section {
-  margin: 20px 0;
-}
-
-section h2 {
-  font-family: "Dune Rise", sans-serif;
-  margin-bottom: 10px;
-}
-
-section ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-section li {
-  background-color: #350068;
-  border-radius: 10px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "PT Sans", sans-serif;
-  font-size: 1vw;
-  height: 100px;
-  margin-bottom: 20px;
-  width: 15%;
-}
-
-section li:before {
-  content: "\f00c";
-  font-family: "FontAwesome";
-  margin-right: 5px;
-}
-#screenshots {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.heading {
-  font-family: "Dune Rise";
-}
-
-.phone {
-  background: #333;
-  border-radius: 10px;
-  display: inline-block;
-  padding: 20px;
-  position: relative;
-  width: 15%;
-}
-
-.phone:before {
-  border: 10px solid transparent;
-  border-top-color: #333;
-  content: "";
-  height: 0;
-  left: 50%;
-  position: absolute;
-  top: 0;
-  transform: translate(-50%, -50%);
-  width: 0;
-}
-
-#screenshots img {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-}
-
-
-#download div {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-#download img {
-  height: 50px;
-  margin: 0 10px;
-}
-
-footer {
-  color: #fff;
-  font-family: "PT Sans", "PTSansB", sans-serif;
-  text-align: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.branding{
-  font-family: "Dune Rise";
-}
-
-@media only screen and (max-width: 480px) {
-  #screenshots {
-    flex-direction: column;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #262626;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .header {
+    background-color: #350068;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-content {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .header h1 {
+    font-size: 4em;
+    color: #C50FE7;
+    font-family: 'Dune Rise', cursive;
+  }
+  
+  .header h2 {
+    font-size: 2em;
+    color: #fff;
+  }
+  
+  .header-button-container {
+    margin-top: 25px;
   }
 
-
-  .phone {
-    width: 100%;
+  .btm-nav a{
+    color: #C50FE7;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: x-large;
+    padding: 0 5px 0 5px;
+  }
+  
+  .download-button {
+    background-color: #C50FE7;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: background-color 0.2s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #350068;
+  }
+  
+  .app-screenshot-container {
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .app-screenshot {
+    max-width: 20%;
+    width: 40%;
+    border: 3px solid #350068;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .features {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2em;
+    color: #C50FE7;
+    margin-bottom: 25px;
+  }
+  
+  .features ul {
+    list-style: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .features li {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 10px;
   }
 
-  header {
-    margin: 40px 0;
+  .alerts {
+    background-color: #350068;
+    padding: 25px;
+    color: #fff;
   }
-
-  header h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
+  
+  .alert {
+    background-color: #C50FE7;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
   }
-
-  header p {
-    font-size: 18px;
+  
+  .alert h3 {
+    color: #fff;
+    margin-bottom: 10px;
   }
-
-  nav a {
-    font-size: 14px;
+  
+  .alert p {
+    color: #fff;
   }
-
-  section h2 {
-    font-size: 28px;
+  
+  
+  @media screen and (max-width: 425px) {
+    .app-screenshot {
+        max-width: 100vw;
+        width: 100vh;
+    }
+    .header h1 {
+      font-size: 3em;
+    }
+    .header h2 {
+      font-size: 1.5em;
+    }
+    .download-button {
+      font-size: 1.25em;
+    }
+    .app-screenshot {
+      width: 45%;
+    }
+    .features h2 {
+      font-size: 1.5em;
+    }
+    .features li {
+      font-size: 1.25em;
+    }
   }
-
-  section li {
-    font-size: 18px;
-  }
-
-  footer {
-    font-size: 14px;
-  }
-}
-
-@media only screen and  (max-width: 480px) {
-  nav ul {
-    flex-direction: column;
-  }
-}
-
-@media only screen and  (max-width: 480px) {
-  section ul {
-    flex-direction: column;
-  }
-
-  section li {
-    width: 100%;
-  }
-}
+  

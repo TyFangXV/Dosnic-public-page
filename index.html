@@ -1,54 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Dosnic | Unlimited shows and movies for free</title>
-  <link href="https://fonts.cdnfonts.com/css/Dune Rise-rise" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Dosnic</h1>
-    <p>Unlimited movies and shows for free</p>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#screenshots">Screenshots</a></li>
-      <li><a href="#download">Download</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section id="features">
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.cdnfonts.com/css/Dune Rise-rise" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Dosnic - Movie Streaming App</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-content">
+        <h1>Dosnic</h1>
+        <h2>The ultimate movie streaming app</h2>
+        <div class="header-button-container">
+          <a href="#" class="download-button">Download</a>
+        </div>
+        <p style="margin-top: 5vh;" class="btm-nav">
+            <a href="#alert">Alerts</a>
+            <a href="#">Devlog</a>
+            <a href="#feature">Feature</a>
+            <a href="https://discord.gg/gBr8ZWTrWQ">Discord</a>
+        </p>
+      </div>
+    </div>
+    <div class="app-screenshot-container">
+        <img src="./asset/home.png" alt="Dosnic App Screenshot" class="app-screenshot">
+        <img src="./asset//explore.png" alt="Dosnic App Screenshot" class="app-screenshot">
+        <img src="./asset/search.png" alt="Dosnic App Screenshot" class="app-screenshot">
+    </div>
+    <div class="features" id="feature">
       <h2>Features</h2>
-      <ul>
-        <li>No country restriction</li>
-        <li>All movies and shows</li>
-        <li>Privacy</li>
-        <li>Screen-sharing</li>
-      </ul>
-    </section>
-    <h2 class="heading">Screenshots</h2>
-    <section id="screenshots">
-        <div class="phone">
-          <img src="./asset/home.png" alt="Screenshot of the MovieStream app home screen">
+      <div>
+        <ul>
+            <li>High-definition video quality</li>
+            <li>Huge library of movies and TV shows</li>
+            <li>Multiple language subtitles</li>
+            <li>Up-to-date with new the newest releases</li>            
+        </ul>
+      </div>
+    </div>
+    <div class="alerts" id="alert">
+        <h1>Alerts</h1>
+        <div class="alert">
+          <h3>App beta release</h3>
+          <p>The app is finally available to download. Please contact us on our discord server, if you have any inquiries</p>
         </div>
-        <div class="phone">
-          <img src="./asset/explore.png" alt="Screenshot of the MovieStream app movie detail page">
-        </div>
-        <div class="phone">
-          <img src="./asset/search.png" alt="Screenshot of the MovieStream app user profile page">
-        </div>
-      </section>
-    <section id="download">
-      <h2>Download the App</h2>
-      <p>App will be available to the public sooner or later</p>
-    </section>
-  </main>
-  <footer>
-    <p>@<span id="year"></span> <span class="branding">|| Dosnic ||<span></p>
-  </footer>
-  <script src="./script.js"></script>
-</body>
+      </div>
+  </body>
 </html>
