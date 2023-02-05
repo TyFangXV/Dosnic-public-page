@@ -10,7 +10,7 @@ async function getData() {
   // Recommendation: handle errors
   if (status !== 200) {
     // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data');
+    throw new Error('Failed to fetch data...');
   }
 
   return JSON.parse(JSON.stringify(data))
